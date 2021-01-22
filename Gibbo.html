@@ -1,0 +1,46 @@
+<!--Visar att det är HTML5-->
+<!DOCTYPE html>
+<!--html språket är engelska-->
+<html lang="sv">
+ <!--det som inte visas-->
+<head>
+    <!--teckenkodning, innebär att åäö kan användas rätt-->
+    <meta charset="UTF-8">
+    <!--Titlen-->
+    <title>Gibbo</title>
+    <!--Länk till css-->
+    <link href="style.css" rel="stylesheet">
+</head>
+<!--det som visas på sidan-->
+<body> 
+	<header>
+		<h1>Djur</h1>
+	</header>
+	<!--Global meny, Nav används för navigation och menyer-->
+	<nav class="global-nav">
+		<!--ul=unorded list-->
+		<ul class="global-ul">
+		<!--li=list item, används i detta fallet för att länka till de andra sidorna-->
+		<li class="global-li"><a href="index.html">Start</a></li>
+		<li class="global-li"><a href="priser.html">Priser</a></li>
+		<li class="global-li"><a href="#">Djur</a></li>
+		</ul>
+	</nav>
+  <!--Samma fast lokal meny-->
+  <nav class="lokal-nav">
+    <ul class="lokal-ul">
+      <li><a href="Tiger.html">Zabeltandade tigern diego</a></li>
+	  <li><a href="Falk.html">Nanginfalken Pinki</a></li>
+	  <li><a href="Guldfisk.html">Gudlfisken nemo</a></li>
+	  <li><a href="Gibbo.html">Gibbon Nanna</a></li>
+   </ul>
+  </nav>
+  <!--h1 används för rubrik-->
+ <h2 class="Djuret">Gibbon Nana</h2>
+ <!--Här är bilden på djuret, classerna används för att underlätta i css-->
+ <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Weisshandgibbon_tierpark_berlin.jpg/1200px-Weisshandgibbon_tierpark_berlin.jpg" class="djur-bild" alt="Bild på Gibbonen Nanna">
+ <!--vanlig text-->
+ <p class="djur-text"> Gibbonen Nana. Utsläng från sin stam pågrund av dyslexi.</p>
+  <!--sluttaggar-->
+ </body>
+ </html>

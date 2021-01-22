@@ -1,0 +1,79 @@
+body {
+    background-color: #218c25;
+	display: grid ;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px 66px 80px 400px 300px;
+    grid-template-areas: 
+      "header header header header"
+ 	  "meny meny meny meny"
+      "namn namn namn namn"
+	  "bild bild bild bild"
+	  "text text text text"
+	
+}
+header {
+    grid-area: header;
+    grid-column: 2 / span 2;
+	border: 2px solid red; 
+    border-style: inset;
+    border-width: 7px;	
+    text-align: center;
+    padding: 2rem;
+    font-size: 30px;
+	font-family: arial;
+	background-image: radial-gradient(red, brown, #1e1e1e);
+}
+
+.meny {
+	display:inline-grid;
+	grid-template-columns: auto auto auto;
+    grid-area: meny;
+	grid-column: 1 / 5;
+	font-size: 30px;
+	font-family: arial;
+	text-align: center;
+	padding:20px;
+	
+}
+
+.namn {
+	font-size: 30px;
+	grid-area: namn;
+	grid-column: 1 / 5;
+	text-align: center;
+}
+
+p{
+	padding-bottom: 20px;
+}
+
+.bild {
+	grid-area: bild;    
+    margin-left: auto;    
+    margin-right: auto;
+}
+
+.text {
+	grid-area: text; 
+	grid-column: 2 / 4;
+	border: 4px solid blue;
+	text-align: center;
+}
+
+a:link {
+  color: black; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: nne;
+}

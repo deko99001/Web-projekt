@@ -1,0 +1,45 @@
+<!-- Visar att vi använder html5 -->
+<!DOCTYPE html>
+<!-- Starten på Html taggen men visar också att det språket vi använder ska vara mestadels Svenska-->
+<html lang="sv">
+<!-- Allting som inte syns på sidan-->
+	<head>
+	<!-- Teckenkodning, den använder charset UTF-8 (bland annat så visas å, ä, ö, korrekt) -->
+		<meta charset="UTF-8">
+		<!-- Det som visas i fliken-->
+		<title>Djuren Park</title>
+		<!-- Länken till CSS -->
+		<link href="style.css" rel="stylesheet">
+		<!-- headtaggens sluttagg, alla taggar med / framför är sluttagg -->
+	</head>
+	<!-- Allting som syns på sidan. class="bakgrund" menar att vi ska ha den klassselektorn för hela bodyn eftersom den ligger i body taggen -->
+	<body class="container">
+		<!-- Header används för Semantik för sidhuvudet-->
+		<header>
+		<!--huvudrubriken, h1 används bara en gång-->
+			<h1>Djuren Park</h1>
+			<!--Header taggens, sluttagg (alla taggar med / framför är sluttagg) -->
+		</header>
+		<!--Nav används för semantik, används till navigations menyer-->
+		<nav>
+			<!-- Används för listor och i detta fallet Unordered list alltså oordad lista-->
+			<ul>
+			<!-- li List Item gör ett item i Listan a taggen används för länkar och här länkar vi till de andra sidorna. Detta är vår globala meny.-->
+				<li><a href="index.html">Start</a></li>
+				<li><a href="priser.html">Priser</a></li>
+				<li><a href="tiger.html">Djur</a></li>
+			</ul>
+		</nav>
+		<!-- Main används för semantik används för sidans huvuddel-->
+		<main>
+		<!-- H2 används som underrubrik class center är en css klass-->
+			<h2>Om Oss</h2>
+			<!-- p används för stycken av text (paragraph på engelska)-->
+			<p>Vi på Djuren Park vill uppmärksamma och jobba mot att djur med funktionshinder blir kränkta. 
+			Därför så kan du hitta information om våra djur här på denna hemsidan, du kan även besöka vår djurpark och information om priser hittar du också här!</p>
+		</main>
+		<!--Div används för Semantik som gör det lättare att ha en klass för flera saker och lägga ut dem i griden-->
+		<!--img används för bilder src är bildadressen och alt står det om bilden inte laddas in-->
+		<div class="gif"><img src="https://media3.giphy.com/media/ekYZVQnBdWfh3axbor/giphy.gif" alt="Apa som svingar sig"></div>
+	</body>
+</html>

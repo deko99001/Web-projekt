@@ -1,0 +1,116 @@
+/*en stjärna i CSS betyder att den berör allt. Padding 0 och Margin 0 betyder att paddingsen hos hemsidan inte existerar så hemsidan går hela vägen ut i kanten*/
+*{
+	padding: 0;
+	margin: 0;
+}
+/*Denna css selektorn berör alla ul. List style type none tar bort alla punktar och så vidare. Display grid startar en grid. och det visas att vi har en row och tre lika stora kolumner*/
+ul{
+	list-style-type: none;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+/*ul li a betyder att den berör alla a som ligger i li som ligger i ul.*/
+ul li a{
+	color: #000000; /*Färgen ska vara svart*/
+	text-align: center; /*Texten ska vara i mitten*/
+	text-decoration: none; /*Tar bort all text decoration*/
+	font-size: 30px; /*Text storleken ska vara 30px*/
+	display: block; /* Displayar block runt listan*/
+	line-height: 100px;  /* Blocken ska vara 100px höga*/ 
+}
+/*Samma som föregående selektor men bara när musen är över blocken*/ 
+ul li a:hover{
+	background-color: #744d1b; /*Bakgrundsfärgen ska ändras till brun*/
+}
+/*Denna selektorn anropar td, th och table*/
+table, th, td{
+	border: 1px solid #000000;/*De ska ha en ram runt sig som ska vara 1 px solid och svart*/
+}
+/*Denna selektorn anropar Table*/
+table{
+	border-collapse: collapse; /*Alla borders som skulle vara bredvid varandra ska bli till en*/
+	width: 80%; /*Tabellen ska täcka 80% av sidan*/
+	margin: auto; /*tabellen ska vara i mitten av sidan*/
+}
+/*Denna selektorn anropar th*/
+th{
+	background-color: #999999; /*Alla table headers ska ha färgen Grå*/
+}
+/*Denna selektorn anropar tr och kommer beröra varje jämn rad*/
+tr:nth-child(even){
+	background-color: #6f4020; /*Bakgrundsfärgen ska vara Brun*/
+}
+/*Denna selektorn anropar tr och kommer beröra den tredje tr raden*/
+tr:nth-child(3){
+	background-color: #306f20;/*Bakgrundsfärgen ska vara mörkgrön*/
+}
+/*Klassselektor för griden till huvudsidan*/
+.container{
+	display: grid; /*Skapa en grid*/
+	grid-template-columns: 1fr 1fr 1fr; /*Tre kolumner som alla ska vara lika stora*/
+	grid-template-rows: 10% 10% 1fr  ; /*Tre rader där de första två ska vara 10% var och den sista ska vara resten*/
+	grid-template-areas: /*Namnge grid areorna*/
+	"header header header"
+	"nav nav  nav"
+	"main main main"
+	". div ."
+	"footer footer footer"
+}
+/*Denna selektorn anropar header*/
+header{
+	grid-area: header; /*Kopplar samman header med grid arean header*/
+	text-align: center; /*Texten ska vara centrerad*/
+	font-size: 50px; /*Textstorleken ska vara 50px*/
+	border: 1px solid #000000; /*Ram runt som ska vara 1px bred och solid svart*/
+	border-radius: 100px; /*Rundade hörnen med 100px */
+	background-color:#65412f ; /*Bakgrundsfärgen ska vara brun*/
+}
+/*Denna selektorn anropar nav*/
+nav{
+	grid-area: nav; /*Kopplar ihop nav med grid arean nav*/
+}
+/*Denna selektor anropar main*/
+main{
+	grid-area: main; /*Kopplar ihop main med grid arean main*/
+	font-size: 20px; /*Textstorleken ska vara 20px*/
+}
+/*Denna selektor anropar div*/
+div{
+	grid-area: div; /*Kopplar ihop div med grid arean div*/
+}
+/*Denna selektor anropar body*/
+body{
+	background-color: #218c25; /*Bakgrundsfärgen ska vara grön*/
+}
+/*Klasselektor som heter gif*/
+.gif{
+	margin: auto; /*Lägger bilden i mitten*/
+}
+.djur-bild{
+   display: block;     /* Displays block runt bilden*/   
+   margin-left: auto;    
+   margin-right: auto;   /*centrerar bilden*/
+   width: 600px;   /*bredd 600px*/
+   padding-top: 30px;   /*padding top är mellanrummet uppifrån alltså 30 px*/
+  
+}
+/*klasselektor anropar <p> från båda sidorna*/
+.djur-text{
+	text-align: center;    /*centrerad text*/
+	font-size: 25px;       /*storlek 25px*/
+	font-family: arial;    /*typsnitt arial*/
+	padding-top: 20px;    /*padding top är mellanrummet uppifrån alltså 20 px*/
+}
+/*klasselektor anropar h1 från båda sidorna*/
+.Djuret{
+	font-size:30px;       /*textstorlek*/
+	text-align: center;    /*centrerad text*/
+	color: #1e1e1e;      /*mörk färg*/
+	padding-top: 30px;    /*padding top är mellanrummet uppifrån alltså 30 px*/
+}
+/*klasselektor för lokal meny*/
+.lokal-ul{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
